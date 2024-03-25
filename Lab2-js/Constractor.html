@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Constructor Pattern Example</title>
+    <script type="text/javascript">
+    
+        function Person(name, age, job){
+            this.name = name;
+            this.age = age;
+            this.job = job;
+            this.sayName = function(){
+                alert(this.name);
+            };    
+        }
+        
+        var pers1 = new Person("Selamawit", 25, "Software Developer");
+        var pers2 = new Person("Tariku", 56, "Teacher");
+        
+        pers1.sayName();   
+        pers2.sayName();   
+        
+        alert(pers1 instanceof Object);  
+        alert(pers1 instanceof Person);  
+
+        alert(pers2 instanceof Object);  
+        alert(pers2 instanceof Person);  
+        
+        alert(pers1.constructor == Person);  
+        alert(pers2.constructor == Person);  
+        
+        alert(pers1.sayName == pers2.sayName);         
+        
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

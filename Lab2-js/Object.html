@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var person = new Object();
+    person.name = "Selamawit";
+    person.age = 25;
+
+    alert(person.name);
+    alert(person.age);
+
+
+    var person = {
+        name : "Selamawit",
+        age : 25
+    };
+
+    alert(person.name);
+    alert(person.age);
+
+    function createPerson(name, age, job){
+        var o = new Object();
+        o.name = name;
+        o.age = age;
+        o.job = job;
+        o.sayName = function(){
+            alert(this.name);
+        };
+        return o;
+    }
+
+
+    var person1 = createPerson("Selamawit", 25, "Software Developer");
+    var person2 = createPerson("Tariku", 56, "Teacher");
+
+    person1.sayName(); 
+    person2.sayName(); 
+</script>
+
+</body>
+</html>

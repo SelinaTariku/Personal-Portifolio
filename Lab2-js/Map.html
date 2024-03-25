@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const persons = [
+        {name: 'Selamawit', age: 27},
+        {name: 'Kalkidan', age: 16},
+        {name: 'Alazar', age: 15},
+        {name: 'Mekdes', age: 46},
+    ];
+    const adults = persons.filter(person => person.age > 18);
+    const names = adults.map(n => n.name); 
+    document.write(names);
+</script>
+</body>
+</html>

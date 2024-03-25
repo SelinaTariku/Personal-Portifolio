@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Current Time: <span id="txt"></span>
+<script>
+    window.onload=function(){getTime();}
+    function getTime(){
+        var today=new Date();
+        var hour=today.getHours();
+        var minu=today.getMinutes();
+        var seco=today.getSeconds();
+
+        minu=checkTime(minu);
+        seco=checkTime(seco);
+        document.getElementById('txt').innerHTML=hour+":"+minu+":"+seco;
+        setTimeout(function(){getTime()},1000);
+    }
+
+    function checkTime(i){
+        if (i<10){
+            i="0" + i;
+        }
+        return i;
+    }
+</script>
+</body>
+</html>

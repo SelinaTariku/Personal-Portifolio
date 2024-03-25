@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var empl = ["Kalkidan", "Mekides", "Alazar"];
+    for (var i = 0; i < empl.length; i++) {
+        document.write(empl[i] + "<br>");
+    }
+
+    var colors = ["red", "blue"];
+    colors.push("brown");
+    colors[3] = "black";
+    alert(colors.length);
+
+    var item = colors.pop();
+    alert(item);
+
+    var count = colors.push("yellow", "green");
+    alert(count);
+
+    count = colors.push("black");
+    alert(count);
+
+    var item = colors.shift();
+    alert(item);
+    alert(colors.length);
+
+    var count = colors.unshift("red", "green");
+    alert(count);
+
+    count = colors.unshift("black");
+    alert(count);
+
+    var item = colors.pop();
+    alert(item);
+    alert(colors.length);
+
+    var values = [1, 2, 3, 4, 5];
+    values.reverse();
+    alert(values);
+
+    var values = [0, 1, 5, 10, 15];
+    values.sort();
+    
+    alert(values);
+</script>
+</body>
+</html>
